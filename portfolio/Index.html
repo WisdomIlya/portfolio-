@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Портфолио</title>
+
+    <link rel="icon" type="image/x-icon" href="./icons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+</head>
+
+<body>
+    <!-- Заголовок страницы -->
+    <header class="header">
+        <video class="header-video" autoplay muted loop>
+            <source type="video/mp4" src="./video/output(compress-video-online.com).mp4">
+        </video>
+        <div class="container"> <!-- обертка header -->
+            <div class="header-row"> <!-- ряд с элементами заголовка -->
+                <img src="./img/photo.jpg" srcset="./img/photo@2x.jpg 2x" alt="Photo" class="header-img">
+                <!-- фото можно задавать разное качество -->
+                <div class="header-desc">
+                    <h1 class="header-title">Илья Власов</h1>
+                    <p class="header-text">фрилансер, веб-разработчик,<br> создание сайтов</p>
+                    <div class="header-btns">
+                        <a href="#projects" class="btn">Портфолио</a>
+                        <a href="#messengers" class="btn-outline">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный блок страницы -->
+    <main>
+        <!-- Блок портфолио -->
+        <section class="portfolio" id="project">
+            <div class="container">
+                <h2 class="portfolio-title">Портфолио</h2>
+
+                <div class="projects" id="projects">
+                    <!-- Первый блок -->
+                    <article>
+                        <a href="./panto.html">
+                            <!--Ссылка ведет на страницу-->
+                            <img src="./img/project-01.jpg" srcset="./img/project-01@2x.jpg 2x"
+                                alt="Сайт магазина мебели" class="project-img">
+                        </a>
+                        <h3 class="project-title"><a href="./panto.html">Сайт магазина мебели</a></h3>
+                    </article>
+                    <!-- Второй блок -->
+                    <article class="project">
+                        <a href="./GoTravel.html"> <!--Ссылка ведет на страницу-->
+                            <img src="./img/project-02.jpg" srcset="./img/project-02@2x.jpg 2x"
+                                alt="Сайт туристического агентства" class="project-img">
+                        </a>
+                        <h3 class="project-title"><a href="./GoTravel.html">Сайт туристического агентства</a></h3>
+                    </article>
+                    <!-- Третий блок -->
+                    <article class="project">
+                        <a href="LoftHouse.html"> <!--Ссылка ведет на страницу-->
+                            <img src="./img/project-03.jpg" srcset="./img/project-03@2x.jpg 2x"
+                                alt="Сайт жилого комплекса" class="project-img">
+                        </a>
+                        <h3 class="project-title"><a href="LoftHouse.html">Сайт жилого комплекса</a></h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Блок контактов -->
+        <section class="contacts" id="messengers">
+            <div class="container">
+                <h2 class="contacts-title">Контакты</h2>
+
+                <div class="messengers">
+
+                    <a href="#!" class="messenger">
+                        <img src="./icons/telegram.svg" target="_blank" alt="Telegram">
+                        Написать в Telegram</a>
+
+                    <a href="#!" class="messenger">
+                        <img src="./icons/whatsapp.svg" target="_blank" alt="WhatsApp">
+                        Отправить в WhatsApp</a>
+
+                    <a href="#!" class="messenger">
+                        <img src="./icons/vk.svg" target="_blank" alt="Вконтакте">
+                        Связаться Вконтакте</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- "подвал" страницы -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <p>Илья Власов <br>HTML верстальщик, создание сайтов Саратов</p>
+                <p>Макет сверстан на курсе в ВебКадеми</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

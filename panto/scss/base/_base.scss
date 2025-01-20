@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+html,
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1310px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    &--small {
+        max-width: 1034px;
+    }
+}
+
+.none {
+    display: none !important;
+}//!important добавляем чтобы другие классы не перебивали класс none
+
+.title-2 {
+    font-size: clamp(32px, 1.702rem + 1.49vw, 42px);
+        font-weight: 700;
+}
