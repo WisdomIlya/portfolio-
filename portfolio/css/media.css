@@ -11,7 +11,6 @@
     }
 
     .header-title {
-        /* word-break: break-all; */
         font-size: 52px;
     }
 
@@ -124,9 +123,6 @@
 
     .messengers {
         gap: 20px;
-        /* и для рядов, и для колонок */
-        /* gap: 25px 35px; */
-        /*первое значение ряды, второе колонки*/
     }
 
     .messenger {

@@ -24,7 +24,7 @@ body {
 
 .header {
     overflow: hidden;
-    /* элементы которые находятся в нем, не выходят из него*/
+   
     position: relative;
 
     padding-top: 80px;
@@ -34,7 +34,7 @@ body {
     color: #fff;
     border-bottom-right-radius: 100px;
 
-    /* рабочее пространство header*/
+   
 }
 
 .header .container {
@@ -44,7 +44,7 @@ body {
 
 .header-video {
     position: absolute;
-    /*загоняем видео под родителя*/
+   
     left: 0;
     top: 0;
     width: 100%;
@@ -54,35 +54,31 @@ body {
     border-bottom-right-radius: 100px;
 
     opacity: 0.2;
-    /*прозрачность*/
+    
 }
 
 .header-row {
     display: flex;
-    /* задаем структуру flex */
+    
     flex-direction: row;
-    /* расположение элементов - ряд */
-    /* выстраивание элементов */
+    
     align-items: center;
-    /* выравнивание элементов */
+   
     column-gap: 60px;
 
-    /* ориентация элементов header*/
 }
 
 .header-img {
     border-radius: 80px;
 
-    /* работа с фотографией*/
+    
 }
 
 .header-title {
     margin-bottom: 10px;
     font-size: 60px;
     font-weight: 700;
-    /* Эти значения берутся с макета фигмы, при клике на текст, информация справа*/
-
-    /* заголовок правого блока header*/
+   
 }
 
 .header-text {
@@ -90,42 +86,42 @@ body {
     font-size: 26px;
     font-weight: 300;
 
-    /* описание правого блока header*/
+   
 }
 
 .header-btns {
     display: flex;
     column-gap: 20px;
-    /* расположение кнопок внутри бокса*/
+  
 }
 
 .btn {
     height: 48px;
-    /* высота кнопки*/
+    
     padding-top: 15px;
     padding-left: 25px;
     padding-right: 25px;
-    /* отсутпы текста внутри кнопки*/
+    
     background-color: #000000;
-    /* цвет фона*/
+    
     border-radius: 8px;
-    /* закругление формы*/
+   
     color: #fff;
     font-size: 16px;
     font-weight: 300;
-    /* размер и толщина шрифта заданы по умолчанию в проекте*/
+    
     line-height: 1;
-    /*высота строки*/
+    
 
-    /*первая кнопка*/
+   
 
     transition: all 0.2s linear;
-    /*плавно изменяем свойства элементов: все, за 0.2сек, линейно*/
+    
 }
 
 .btn:hover {
     background-color: #1782CF;
-    /*при наведении курсора меняем цвет фона кнопки*/
+   
 }
 
 .btn-outline {
@@ -136,39 +132,34 @@ body {
     color: #fff;
 
     border: 1px solid #3B3B3B;
-    /* залитие рамки цветом*/
+ 
 
     font-size: 16px;
     font-weight: 300;
     border-radius: 8px;
     line-height: 1;
     transition: all 0.2s ease-in;
-    /*вторая кнопка*/
+ 
 }
 
 .btn-outline:hover {
     border-color: #1782CF;
-    /*при наведении курсора меняем цвет рамки кнопки*/
+   
 }
 
 /* Portfolio */
 
 .portfolio {
     padding: 80px 0;
-    /* отступ от блока header и после него*/
+ 
 }
-
-/*
-    Внутренние отступы. Задаются с помощью свойства padding. Такой отступ принадлежит самому элементу и находится внутри него.
-    Внешние отступы. Являются расстоянием между границей текущего элемента веб-страницы и границами соседних элементов,либо родительского элемента. Размер расстояния регулируется свойством margin. Такой отступ находится вне элемента.
-*/
 
 .portfolio-title {
     font-size: 52px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 65px;
-    /*верстка заголовка*/
+    
 }
 
 .projects {
@@ -176,36 +167,32 @@ body {
     flex-direction: column;
     row-gap: 70px;
     align-items: center;
-    /*отступ между карточками, ориентация элементов*/
+   
 }
 
 .project {
     text-align: center;
-    /*выравниваем блок по центру*/
+   
 }
 
 .project-img {
     margin-bottom: 30px;
     border-radius: 30px;
     transition: opacity 0.2s ease-in;
-    /*отступы верх/низ + закругление фото*/
 }
 
 .project-img:hover {
     opacity: 0.8;
-    /*эффект прозрачности при наведении на картинку*/
 }
 
 .project-title {
     font-size: 22px;
     text-align: center;
-    /*размер текста под картинкой*/
 }
 
 .project-title a {
     color: #000000;
     text-decoration: underline;
-    /*цвет меняем на черный, делаем подчеркивание*/
 }
 
 /* Contacts */
@@ -215,7 +202,6 @@ body {
     background: #252525;
     border-top-left-radius: 100px;
     color: #fff;
-    /*Отступы, закругление, заливка цветом*/
 }
 
 .contacts-title {
@@ -223,7 +209,6 @@ body {
     font-size: 52px;
     font-weight: 700;
     text-align: center;
-    /*Заголовок*/
 }
 
 
@@ -231,31 +216,26 @@ body {
 .messengers {
     display: flex;
     column-gap: 30px;
-    /*Выравнивание блоков относительно друг друга*/
-
     flex-wrap: wrap;
-    /*мобильная адаптация, если элемент не помещается - переместить*/
     row-gap: 30px;
-    /*мобильная адаптация, отступ между элементами*/
 }
 
 
 
 .messenger {
     flex-grow: 1;
-    /*выравниваем обьекты относительно свободной площади*/
 
     padding: 46px 20px;
     border-radius: 20px;
     border: 1px solid #363636;
     color: #fff;
-    /*текст*/
+
 
     display: flex;
     column-gap: 15px;
-    /*отступ текста от картинки*/
+ 
     align-items: center;
-    /*выравниваем текст по центру*/
+  
     transition: background-color 0.2s ease-in;
 }
 
@@ -282,10 +262,8 @@ body {
 
 .footer-inner p+p {
     margin-top: 15px;
-    /*отступ между абзацами*/
+  
 }
-
-/* Для такого тега нужно чтобы p стояли друг за другом*/
 
 /* Inner page (panto)*/
 
@@ -300,7 +278,7 @@ body {
     align-items: center;
     text-align: center;
     margin-bottom: 40px;
-    /*внешний отступ*/
+ 
 }
 
 .inner-page-title {
@@ -329,7 +307,6 @@ body {
 
 .inner-page-image {
     display: block;
-    /*отображение как блок*/
     margin: 0 auto;
     margin-bottom: 40px;
 }
